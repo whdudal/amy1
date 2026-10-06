@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>노인전문가 김시니어 | 건강하고 존엄한 노후를 위한 파트너</title>
+  <style>
+    /* 기본 리셋 및 스타일 */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f8f9fa;
+      font-size: 18px; /* 가독성을 위한 큰 기본 폰트 크기 */
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* 헤더 & 네비게이션 */
+    header {
+      background-color: #ffffff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 2rem;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #1b4332; /* 신뢰감을 주는 차분한 그린 톤 */
+    }
+    .nav-menu {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+    .nav-menu a {
+      font-weight: 600;
+      color: #495057;
+      transition: color 0.2s;
+    }
+    .nav-menu a:hover {
+      color: #1b4332;
+    }
+
+    /* 히어로 섹션 */
+    .hero {
+      background: linear-gradient(135deg, #1b4332 0%, #2d6a4f 100%);
+      color: #ffffff;
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+    .hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1.2rem;
+      font-weight: 700;
+      word-break: keep-all;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      opacity: 0.9;
+      word-break: keep-all;
+    }
+    .btn-primary {
+      display: inline-block;
+      background-color: #d8f3dc;
+      color: #1b4332;
+      padding: 0.8rem 2rem;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      transition: background-color 0.2s;
+    }
+    .btn-primary:hover {
+      background-color: #b7e4c7;
+    }
+
+    /* 주요 서비스 섹션 */
+    .services {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      color: #1b4332;
+      margin-bottom: 3rem;
+    }
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .service-card {
+      background-color: #ffffff;
+      padding: 2.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      border-top: 5px solid #2d6a4f;
+    }
+    .service-card h3 {
+      font-size: 1.4rem;
+      color: #1b4332;
+      margin-bottom: 1rem;
+    }
+    .service-card p {
+      color: #6c757d;
+      font-size: 1rem;
+    }
+
+    /* 소식 / 컬럼 섹션 */
+    .blog {
+      background-color: #ffffff;
+      padding: 4rem 2rem;
+    }
+    .blog-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .blog-card {
+      background-color: #f8f9fa;
+      border-radius: 8px;
+      padding: 1.5rem;
+    }
+    .blog-card .tag {
+      display: inline-block;
+      background-color: #d8f3dc;
+      color: #1b4332;
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      margin-bottom: 0.8rem;
+    }
+    .blog-card h4 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: #212529;
+    }
+
+    /* 푸터 */
+    footer {
+      background-color: #212529;
+      color: #adb5bd;
+      padding: 3rem 2rem;
+      font-size: 0.95rem;
+    }
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+    .footer-info h3 {
+      color: #ffffff;
+      margin-bottom: 0.8rem;
+    }
+
+    /* 반응형 스타일 */
+    @media (max-width: 768px) {
+      .nav-menu {
+        display: none; /* 모바일용 메뉴 구성 시 조절 */
+      }
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 헤더 -->
+  <header>
+    <div class="nav-container">
+      <div class="logo">김시니어 노인연구소</div>
+      <ul class="nav-menu">
+        <li><a href="#about">소개</a></li>
+        <li><a href="#services">전문 분야</a></li>
+        <li><a href="#column">시니어 컬럼</a></li>
+        <li><a href="#contact">상담 및 문의</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- 메인 히어로 섹션 -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>건강하고 존엄한 노후를 함께 설계합니다</h1>
+      <p>20년 경력의 노인복지 및 시니어 케어 전문가가 어르신과 가족분들에게 명확한 솔루션을 제공합니다.</p>
+      <a href="#contact" class="btn-primary">1:1 상담 신청하기</a>
+    </div>
+  </section>
+
+  <!-- 주요 서비스/전문 분야 -->
+  <section class="services" id="services">
+    <h2 class="section-title">전문 서비스 영역</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>노인 장기요양 컨설팅</h3>
+        <p>등급 신청 절차부터 시설/재가 요양 서비스 연결까지 맞춤형 가이드를 제공합니다.</p>
+      </div>
+      <div class="service-card">
+        <h3>시니어 케어 교육 & 강의</h3>
+        <p>요양보호사, 지자체, 기관을 대상으로 현장 중심의 노인케어 전문 교육을 진행합니다.</p>
+      </div>
+      <div class="service-card">
+        <h3>치매 예방 및 심리 상담</h3>
+        <p>어르신의 인지 건강 관리 프로그램과 가족 보호자를 위한 심리 지원 상담을 실시합니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 최신 컬럼/정보 -->
+  <section class="blog" id="column">
+    <div class="blog-container">
+      <h2 class="section-title">시니어 인사이트</h2>
+      <div class="blog-grid">
+        <div class="blog-card">
+          <span class="tag">정보</span>
+          <h4>2026년 달라지는 노인장기요양보험 혜택 안내</h4>
+          <p>올해 새롭게 개정된 요양 등급별 지원 혜택 및 신청 유의사항을 확인하세요.</p>
+        </div>
+        <div class="blog-card">
+          <span class="tag">건강</span>
+          <h4>집에서 쉽게 실천하는 일상속 치매 예방 수칙 5가지</h4>
+          <p>뇌 인지 기능을 자극하고 건강한 노후를 유지하는 생활 습관 정보입니다.</p>
+        </div>
+        <div class="blog-card">
+          <span class="tag">가족</span>
+          <h4>보호자의 마음 돌보기: 케어버아웃 예방법</h4>
+          <p>어르신을 돌보는 가족들이 지치지 않고 마음의 건강을 지키는 가이드.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 푸터 / 문의처 -->
+  <footer id="contact">
+    <div class="footer-container">
+      <div class="footer-info">
+        <h3>김시니어 노인전문가 사무소</h3>
+        <p>문의전화: 02-1234-5678</p>
+        <p>이메일: contact@seniorexpert.com</p>
+        <p>주소: 서울특별시 강남구 테헤란로 123 시니어타워 4층</p>
+      </div>
+      <div>
+        <p>&copy; 2026 김시니어 노인연구소. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
